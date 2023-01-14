@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+{% include 'basic.html' %}
+{% load static %}
+<head>
+    <style>
+        body{
+           background-image: url({% static 'library2.png' %});
+           }
+    </style>
+    <meta charset="UTF-8"><br>
+</head>
+<body>
+
+<div class="p-4 bg-light">
+    <div class="container-fluid py-3">
+      <h1 class="display-5 fw-bold">Welcome to Library Management System</h1>
+      <p class="col-md-8 fs-4">You can register as student. You will be able to issue any book thorugh the admin. After that you need to return the book within 14 days or else a fine of Rs 5 will be charged per day till the book is returned.</p>
+      <a href="http://127.0.0.1:8000/libraryapp/student_registration/" class="btn btn-primary btn-lg">Register as Student</a>
+    </div>
+</div>
+    <br>
+
+
+</body>
+</html>
